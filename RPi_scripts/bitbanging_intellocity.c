@@ -22,13 +22,36 @@ int main (int argc, char **argv){
   }
   else 
   {
+    int i;
+    int strsize = 0;
+    for (i=1; i<argc; i++) {
+        strsize += strlen(argv[i]);
+        if (argc > i+1)
+            strsize++;
+    }
+
+    printf("strsize: %d\n", strsize);
+
+    char *direction;
+    direction = malloc(strsize);
+    direction[0] = '\0';
+
+    for (i=1; i<argc; i++) {
+        strcat(direction, argv[i]);
+        if (argc > i+1)
+            strcat(direction, " ");
+    }
+
+    printf("direction: %s\n", direction);
+
+
         //setup for wiringPi   
     wiringPiSetup();
         // set priority high for threading ==> better timing
     piHiPri (20) ;
     pinMode(channel, OUTPUT);
         // pullUpDnControl(BEAM,PUD_UP);
-    char direction[] = argv[1];
+    // char direction[] = argv[1];
     if (direction == "up")
     {
       bitBangingUp();
