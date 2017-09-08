@@ -2,6 +2,7 @@
 // #include <iostream>
 #include <stdio.h>
 #include <wiringPi.h>
+#include <string.h>
 //the data input pin
 void bitBangingUp (void);
 void bitBangingDown (void);
