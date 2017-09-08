@@ -1,5 +1,6 @@
 #include <stdlib.h>
 // #include <iostream>
+#include <stdio.h>
 #include <wiringPi.h>
 //the data input pin
 void bitBangingUp (void);
@@ -28,11 +29,11 @@ int main (int argc, char **argv){
     pinMode(channel, OUTPUT);
         // pullUpDnControl(BEAM,PUD_UP);
     string direction = argv[1];
-    if (direction == 'up')
+    if (direction == "up")
     {
       bitBangingUp();
     }
-    else if (direction == 'down')
+    else if (direction == "down")
     {
       bitBangingDown();
     }
