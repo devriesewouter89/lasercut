@@ -100,6 +100,7 @@ void bitBangingUp(void){
   B(); //
   B(); //
   digitalWrite(channel, LOW);
+  return 0;
 }
 
 void bitBangingDown(void){
@@ -129,6 +130,7 @@ void bitBangingDown(void){
   A(); //
   A(); //
   digitalWrite(channel, LOW);
+  return 0;
 }
 
 void B(void){
