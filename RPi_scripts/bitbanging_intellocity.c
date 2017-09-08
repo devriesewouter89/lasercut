@@ -54,7 +54,7 @@ int main (int argc, char **argv){
     pinMode(channel, OUTPUT);
         // pullUpDnControl(BEAM,PUD_UP);
     // char direction[] = argv[1];
-    if (direction == "up")
+    if (direction == 'up')
     {
       bitBangingUp();
     }
