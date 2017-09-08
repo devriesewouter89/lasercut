@@ -28,7 +28,7 @@ int main (int argc, char **argv){
     piHiPri (20) ;
     pinMode(channel, OUTPUT);
         // pullUpDnControl(BEAM,PUD_UP);
-    char direction[10] = argv[1];
+    char direction[] = argv[1];
     if (direction == "up")
     {
       bitBangingUp();
