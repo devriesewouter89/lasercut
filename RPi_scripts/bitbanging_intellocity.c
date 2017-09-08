@@ -100,7 +100,7 @@ void bitBangingUp(void){
   B(); //
   B(); //
   digitalWrite(channel, LOW);
-  return 0;
+  // return 0;
 }
 
 void bitBangingDown(void){
@@ -130,30 +130,30 @@ void bitBangingDown(void){
   A(); //
   A(); //
   digitalWrite(channel, LOW);
-  return 0;
+  // return 0;
 }
 
 void B(void){
-  for (;;)
-  {
+  // for (;;)
+  // {
     digitalWrite (channel,   LOW) ; delayMicroseconds (1100);
     digitalWrite (channel,  HIGH) ; delayMicroseconds (360) ;
-  }
+  // }
 }
 
 void A(void){
-  for (;;)
-  {
+  // for (;;)
+  // {
     digitalWrite (channel, HIGH) ; delayMicroseconds (720) ;
     digitalWrite (channel,  LOW) ; delayMicroseconds (360) ;
     digitalWrite (channel, HIGH) ; delayMicroseconds (370) ;
-  }
+  // }
 }
 
 void hold(void){
-  for (;;)
-  {
+  // for (;;)
+  // {
     digitalWrite (channel,  LOW) ; delayMicroseconds(11320);
     digitalWrite (channel, HIGH) ; delayMicroseconds(420)  ;
-  }
+  // }
 }
