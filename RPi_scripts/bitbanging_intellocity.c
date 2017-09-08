@@ -23,6 +23,7 @@ int main (int argc, char **argv){
   }
   else 
   {
+    /*read direction*/
     int i;
     int strsize = 0;
     for (i=1; i<argc; i++) {
@@ -44,7 +45,7 @@ int main (int argc, char **argv){
     }
 
     printf("direction: %s\n", direction);
-
+    /**/
 
         //setup for wiringPi   
     wiringPiSetup();
@@ -62,7 +63,7 @@ int main (int argc, char **argv){
       bitBangingDown();
     }
     else {
-      printf( "usage: %s up/down", argv[0] );
+      printf( "error in argument usage: %s up/down", argv[0] );
     }
 
   }
