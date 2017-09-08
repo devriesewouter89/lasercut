@@ -55,7 +55,7 @@ int main (int argc, char **argv){
         // pullUpDnControl(BEAM,PUD_UP);
     // char direction[] = argv[1];
     int up = strcmp(direction, "up");
-    int down = strcmp(direction, "down")
+    int down = strcmp(direction, "down");
     if (up ==0)
     {
       bitBangingUp();
