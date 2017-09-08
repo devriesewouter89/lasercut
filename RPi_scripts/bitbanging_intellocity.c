@@ -19,7 +19,7 @@ int main (int argc, char **argv){
   if ( argc != 2 ) /* argc should be 2 for correct execution */
   {
         /* We print argv[0] assuming it is the program name */
-    printf( "usage: %s up/down", argv[0] );
+    printf( "usage: %s up/down\n", argv[0] );
   }
   else 
   {
