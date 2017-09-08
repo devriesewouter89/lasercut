@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <iostream>
+#include <iostream.h>
 #include <wiringPi.h>
 //the data input pin
 void bitBangingUp (void);
