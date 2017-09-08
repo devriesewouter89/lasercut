@@ -52,6 +52,8 @@ int main (int argc, char **argv){
         // set priority high for threading ==> better timing
     piHiPri (20) ;
     pinMode(channel, OUTPUT);
+    GPIO.setmode(GPIO.BOARD)
+
         // pullUpDnControl(BEAM,PUD_UP);
     // char direction[] = argv[1];
     int up = strcmp(direction, "up");
