@@ -65,7 +65,7 @@ int main (int argc, char **argv){
       bitBangingDown();
     }
     else {
-      printf( "error in argument usage: %s up/down", argv[0] );
+      printf( "error in argument usage: %s up/down\n", argv[0] );
     }
 
   }
