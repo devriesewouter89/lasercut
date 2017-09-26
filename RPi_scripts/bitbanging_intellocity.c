@@ -13,7 +13,7 @@ void hold(void);
 
 
 //pin numbers
-const int channel = 12;
+const int channel = 15;
 
 int main (int argc, char **argv){
   if ( argc != 2 ) /* argc should be 2 for correct execution */
